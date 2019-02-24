@@ -21,11 +21,12 @@ You can install the latest (development) version of `salmonstats` from [GitHub](
 remotes::install_github("jimtyhurst/salmonstats")
 ```
 
-## Vignettes
+## Analyses
 
-Several examples of data analysis and visualization are provided in the [vignettes](./vignettes/) directory.
-
-The vignette, [Salmon Data References](./vignettes/salmon-data-references.pdf), provides references to external data sources.
+* `Rmd` files of data analysis and visualization are provided in the [vignettes](./vignettes/) directory.
+    * [Data Exploration: Columbia River Adult Salmon Returns](./vignettes/columbia-river-adult-salmon-returns.Rmd) ([html output](./docs/columbia-river-adult-salmon-returns.html))
+    * [NuSEDS Adult Salmon Escapement Data](./vignettes/nuseds-adult-salmon-escapement-data.Rmd) ([html output](./docs/nuseds-adult-salmon-escapement-data.html))
+* [Salmon Data References](./docs/salmon-data-references.md): references to external data sources used in this project.
 
 ## License
 
