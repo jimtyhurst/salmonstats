@@ -3,6 +3,7 @@ title: "Data Exploration: Columbia River Adult Salmon Returns"
 author: "[Jim Tyhurst](https://www.jimtyhurst.com/)"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
+numbersections: true
 vignette: >
   %\VignetteIndexEntry{Vignette Title}
   %\VignetteEngine{knitr::rmarkdown}

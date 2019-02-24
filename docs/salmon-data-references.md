@@ -1,20 +1,10 @@
 ---
-title: "Salmon Data References"
-author: "[Jim Tyhurst](https://www.jimtyhurst.com/)"
-date: "`r Sys.Date()`"
-output: pdf_document
-vignette: >
-  %\VignetteIndexEntry{Vignette Title}
-  %\VignetteEngine{knitr::rmarkdown}
-  %\VignetteEncoding{UTF-8}
+title: Salmon Data References
+numbersections: true
 ---
 
-```{r setup, include = FALSE}
-knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>"
-)
-```
+[Jim Tyhurst](https://www.jimtyhurst.com/)  
+2019-02-23
 
 **Table of Contents**
 
@@ -36,30 +26,24 @@ knitr::opts_chunk$set(
 
 ### [Events](https://yearofthesalmon.org/events/)
 
-#### [The Second NPAFC-IYS Workshop](https://yearofthesalmon.org/salmon_event/the-second-npafc-iys-workshop-salmon-ocean-ecology-in-a-changing-climate/)
-Salmon Ocean Ecology in a Changing Climate.
-18-20 May 2019: Portland, Oregon, USA.
+* The Second NPAFC-IYS Workshop: [Salmon Ocean Ecology in a Changing Climate](https://yearofthesalmon.org/salmon_event/the-second-npafc-iys-workshop-salmon-ocean-ecology-in-a-changing-climate/). 18-20 May 2019, Portland, Oregon, USA.
 
 ---
 
 ## [International Salmon Data Laboratory](https://yearofthesalmon.org/project/international-salmon-data-laboratory/) (ISDL)
 
-### [A Prolegomena for ISDL](https://docs.google.com/document/d/1aZNCDmqZwhVQWHo_XsXs2f_VI0Wx_Ae4l2GRaYcoYw4/)
+* [A Prolegomena for ISDL](https://docs.google.com/document/d/1aZNCDmqZwhVQWHo_XsXs2f_VI0Wx_Ae4l2GRaYcoYw4/): An introduction to ISDL as a [project](https://yearofthesalmon.org/project/international-salmon-data-laboratory/) within the [International Year of the Salmon](https://yearofthesalmon.org/).
+* Webcasts
 
-An introduction to ISDL as a [project](https://yearofthesalmon.org/project/international-salmon-data-laboratory/) within the [International Year of the Salmon](https://yearofthesalmon.org/).
+    * Scott Akenhead, International Salmon Data Laboratory (ISDL). 2019-02-07. Overview of recent tools for data assembly, analysis, and visualization. Neo4j Online Meetup #49.
+        Recording: https://www.youtube.com/watch?v=aeVJeeO2Vgc (length: 1:05:24)
+    * Scott Akenhead, Pacific Biological Station. 2018-09-20. International Salmon Data Laboratory. GraphConnect, New York City.
+        Recording: https://www.youtube.com/watch?v=ZNWEBoduACk (length: 18:55)
+        Abstract and slides: https://neo4j.com/graphconnect-2018/session/international-salmon-data-lab?_ga=2.201563026.2051043616.1549557272-560309801.1548951192
+* Online discussions
 
-### Webcasts
-
-* Scott Akenhead, International Salmon Data Laboratory (ISDL). 2019-02-07. Overview of recent tools for data assembly, analysis, and visualization. Neo4j Online Meetup #49.
-    Recording: https://www.youtube.com/watch?v=aeVJeeO2Vgc (length: 1:05:24)
-* Scott Akenhead, Pacific Biological Station. 2018-09-20. International Salmon Data Laboratory. GraphConnect, New York City.
-    Recording: https://www.youtube.com/watch?v=ZNWEBoduACk (length: 18:55)
-    Abstract and slides: https://neo4j.com/graphconnect-2018/session/international-salmon-data-lab?_ga=2.201563026.2051043616.1549557272-560309801.1548951192
-
-### Online discussions
-
-* Neo4j Community Site thread for the International Salmon Data Laboratory project.
-    https://community.neo4j.com/t/international-salmon-data-laboratory/2033
+    * Neo4j Community Site thread for the International Salmon Data Laboratory project.
+        https://community.neo4j.com/t/international-salmon-data-laboratory/2033
 
 ---
 
@@ -68,7 +52,7 @@ An introduction to ISDL as a [project](https://yearofthesalmon.org/project/inter
 See more detailed information about these data sources in posts by Scott Akenhead at https://community.neo4j.com/t/international-salmon-data-laboratory/2033/5
 
 ### New Salmon Escapement Database System (NuSEDS)
-NuSEDS is the Pacific Region’s centralized Oracle database that holds adult salmon escapement data. About 10,000 salmon spawning sites in DFO Pacific Region have been observed 0 to 10 times per year for 6 species for nearly 100 years (poorly before 1948). Data is aggregated within year; the raw data is largely on paper.
+[NuSEDS](https://open.canada.ca/en/suggested-datasets/new-salmon-escapement-database-nuseds) is the Pacific Region’s centralized Oracle database that holds adult salmon escapement data. About 10,000 salmon spawning sites in DFO Pacific Region have been observed 0 to 10 times per year for 6 species for nearly 100 years (poorly before 1948). Data is aggregated within year; the raw data is largely on paper.
 
 * zip file containing NUSEDS_20180416.csv
     http://www.pac.dfo-mpo.gc.ca/od-ds/science/sed-des/NUSEDS_20180416.zip
@@ -87,24 +71,19 @@ The spatial pattern of fishing (8 areas), by species (6), gear (3), and year (20
 
 * spreadsheet in Google Documents
     [Data - Ruggerone and Irvine 2018 North Pacific Salmon Abundance and Biomass Data 14 Feb 2018.xlsx](https://docs.google.com/a/s4s.com/viewer?a=v&pid=sites&srcid=czRzLmNvbXxzb2NrZXllLWN1bXVsYXRpdmUtaW1wYWN0c3xneDo3MDE1NzdlMjRkZTg2MGIw)
-
-#### Tables and graphs generated from the data
-
-* Gregory T. Ruggerone and James R. Irvine. 2018-04-04. Numbers and Biomass of Natural‐ and Hatchery‐Origin Pink Salmon, Chum Salmon, and Sockeye Salmon in the North Pacific Ocean, 1925–2015. https://afspubs.onlinelibrary.wiley.com/doi/full/10.1002/mcf2.10023
-* Nelson Bennett. 2018-04-10. Pacific salmon ‘more abundant than ever’, new study claims. Business in Vancouver. https://biv.com/article/2018/04/pacific-salmon-more-abundant-ever-new-study-claims
+* Tables and graphs generated from the data:
+    * Gregory T. Ruggerone and James R. Irvine. 2018-04-04. Numbers and Biomass of Natural‐ and Hatchery‐Origin Pink Salmon, Chum Salmon, and Sockeye Salmon in the North Pacific Ocean, 1925–2015. https://afspubs.onlinelibrary.wiley.com/doi/full/10.1002/mcf2.10023
+    * Nelson Bennett. 2018-04-10. Pacific salmon ‘more abundant than ever’, new study claims. Business in Vancouver. https://biv.com/article/2018/04/pacific-salmon-more-abundant-ever-new-study-claims
 
 ### NPAFC Statistics: Pacific Salmonid Catch and Hatchery Release Data
 
-* Links to data and meta data for the North Pacific Anadromous Fish Commission (NPAFC), which includes participation from 5 countries (US, RU, JP, SK, CA)
-    https://npafc.org/statistics/
-
-#### Returns and Spawners for Sockeye, Pink, and Chum Salmon from British Columbia
-
+* Links to data and meta data for the North Pacific Anadromous Fish Commission (NPAFC), which includes participation from 5 countries (US, RU, JP, SK, CA): https://npafc.org/statistics/
+* Returns and Spawners for Sockeye, Pink, and Chum Salmon from British Columbia  
 Productivity (recruits per spawner) estimates for BC sockeye, pink, and chum salmon. Annual estimates by brood year of spawner numbers, catch, and population and age composition are in a simple database.
 
-* A.D. Ogden et al. 2015. Productivity (Recruits-per-Spawner) Data for Sockeye, Pink, and Chum Salmon from British Columbia.
+    * A.D. Ogden et al. 2015. Productivity (Recruits-per-Spawner) Data for Sockeye, Pink, and Chum Salmon from British Columbia.  
     ftp://ftp.meds-sdmm.dfo-mpo.gc.ca/pub/openData/Recruits_Spawner/Canadian_Technical_Report_3130.pdf
-* Links to data and meta data
+    * Links to data and meta data  
     https://open.canada.ca/data/en/dataset/3d659575-4125-44b4-8d8f-c050d6624758
 
 ### Graph DB schemas for the data
