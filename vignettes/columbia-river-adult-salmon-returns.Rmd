@@ -17,6 +17,8 @@ knitr::opts_chunk$set(
 )
 ```
 
+<span style="color:red">_Work in Process_ ...</span>
+
 ## Configuration
 ```{r}
 library(salmonstats)
@@ -42,42 +44,43 @@ For example, the following files are for data from Bonneville Dam (BON) from yea
 > fpc_salmon-BON-20000101-20001231.csv  
 > fpc_salmon-BON-20150101-20001231.csv
 
-Metadata is available from the [Fish Passage Center Adult Metadata](http://www.fpc.org/documents/metadata/FPC_Adult_Metadata.html) web page.
+Metadata is available from the [Fish Passage Center Adult Metadata](http://www.fpc.org/documents/metadata/FPC_Adult_Metadata.html) web page. In particular, Bonneville Dam data only has observations from March 15 to November 15 for years up to 2001. Starting in 2002, observations were made every day during the year.
 
-```{r results='hide'}
+<span style="color:red">_To Do_: There are quite a few daily count values that are negative. What does that mean?</span>
+
+```{r message=FALSE}
 # Replace the path components with the location of your data.
 data_directory <- file.path("..", "inst", "extdata", "ColumbiaRiver-FishPassageCenter", "BonnevilleDam")
 
-bon2000 <- get_fpc_data(2000, "BON", data_directory)
+bon2005 <- get_fpc_data(2005, "BON", data_directory)
 bon2015 <- get_fpc_data(2015, "BON", data_directory)
 ```
 
-## Plots for Bonneville Dam for years 2000 and 2015
+## Plots for Bonneville Dam for years 2005 and 2015
 
 ```{r fig.height = 6, fig.width = 8, fig.align = "center"}
-plot_single_fpc_file(bon2000, 2000, "Bonneville Dam")
+plot_single_fpc_file(bon2005, 2005, "Bonneville Dam")
 ```
 
+Chinook salmon run in spring and fall, as shown by the two bumps around days 120 and 250. The other species only have a single run per year.
 
 ```{r fig.height = 6, fig.width = 8, fig.align = "center"}
 plot_single_fpc_file(bon2015, 2015, "Bonneville Dam")
 ```
 
-I am surprised that the numbers for 2015 are so much bigger than for 2000.
+Comparing these last two plots, I am surprised that the numbers for 2015 are so much bigger than for 2005.
 
 ## Plots for Bonneville Dam from 1990 to 2018
 
 Each year of data is in one CSV file in a subdirectory of `inst/extdata` with a separate directory for each passage reporting site. Let's look at data for steelhead salmon first:
 
-```{r}
+```{r message=FALSE}
 first_year <- 1990
 last_year <- 2018
 passage_reporting_site_name <- "Bonneville Dam"
 passage_reporting_site_code <- "BON"
 
-# Replace the path components with the location of your data.
-data_directory <- file.path("..", "inst", "extdata", "ColumbiaRiver-FishPassageCenter", "BonnevilleDam")
-
+# Concatenates the files into a single tibble.
 steelhead <- first_year:last_year %>% 
   purrr::map(function(year) {get_fpc_data(year, passage_reporting_site_code, data_directory)}) %>% 
   purrr::reduce(function(x, y) {dplyr::bind_rows(x, y)}) %>% 
@@ -89,7 +92,7 @@ We plot a few years to get a feel for the distribution:
 
 ```{r fig.height = 6, fig.width = 8, fig.align = "center"}
 steelhead %>% 
-  filter(Year %in% c(2000, 2005, 2010, 2015)) %>% 
+  dplyr::filter(Year %in% c(2000, 2005, 2010, 2015)) %>% 
   ggplot(aes(DayOfYear)) +
   geom_line(aes(y = Steelhead, color = factor(Year))) +
   ggtitle(
@@ -100,7 +103,9 @@ steelhead %>%
   scale_y_continuous(name = "Daily Count", limits = c(0, 10000), breaks = seq(0, 10000, by = 2000))
 ```
 
-I notice that 2010 and 2015 have higher peaks than 2000 and 2005, but I thought that numbers were descreasing. Let's look more closely at the yearly trend. In the next plot, we compare total quantity for the whole year.
+I am surprised that 2010 and 2015 have higher peaks than 2000 and 2005, because I thought that salmon numbers were descreasing. Let's look more closely at the yearly trend. In the next plot, we sum the daily observations, in order to compare total quantity for the whole year.
+
+<span style="color:red">_To Do_: Revise the plots to only include data from March 15 to November 15 when comparing years before 2002 with years from 2002 and later, because years before 2002 only have data for those 8 months of the year.</span>
 
 ```{r fig.height = 6, fig.width = 8, fig.align = "center"}
 steelhead %>% 
@@ -109,12 +114,14 @@ steelhead %>%
   ggplot(aes(Year, Quantity)) +
   geom_bar(stat = "identity") +
   ggtitle(
-    glue("{passage_reporting_site}: Yearly Total of Adult {species} Returns",
+    glue("{passage_reporting_site}: Total Adult {species} Returns",
          passage_reporting_site = passage_reporting_site_name,
          species = "Steelhead")) +
   scale_x_continuous(name = "Year", breaks = seq(1990, 2015, by = 5)) +
-  scale_y_continuous(name = "Yearly Total", labels = function(x){format(x, scientific = FALSE, big.mark = ",")})
+  scale_y_continuous(name = "Returns Counted", labels = function(x){format(x, scientific = FALSE, big.mark = ",")})
 ```
+
+<span style="color:red">_To Do_: Extend this plot to earlier years.</span>
 
 ## References
 
