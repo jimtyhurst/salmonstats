@@ -25,7 +25,7 @@ remotes::install_github("jimtyhurst/salmonstats")
 
 Several examples of data analysis and visualization are provided in the [vignettes](./vignettes/) directory.
 
-The vignette, [Salmon Data References](./vignettes/salmon-data-references.html), provides references to external data sources.
+The vignette, [Salmon Data References](./vignettes/salmon-data-references.pdf), provides references to external data sources.
 
 ## License
 
