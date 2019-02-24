@@ -44,9 +44,9 @@ For example, the following files are for data from Bonneville Dam (BON) from yea
 
 Metadata is available from the [Fish Passage Center Adult Metadata](http://www.fpc.org/documents/metadata/FPC_Adult_Metadata.html) web page.
 
-```{r warning='hide'}
+```{r results='hide'}
 # Replace the path components with the location of your data.
-data_directory <- file.path("~", "data", "salmon", "ColumbiaRiver", "FishPassageCenter", "BonnevilleDam")
+data_directory <- file.path("..", "inst", "extdata", "ColumbiaRiver-FishPassageCenter", "BonnevilleDam")
 
 bon2000 <- get_fpc_data(2000, "BON", data_directory)
 bon2015 <- get_fpc_data(2015, "BON", data_directory)
@@ -61,6 +61,59 @@ plot_single_fpc_file(bon2000, 2000, "Bonneville Dam")
 
 ```{r fig.height = 6, fig.width = 8, fig.align = "center"}
 plot_single_fpc_file(bon2015, 2015, "Bonneville Dam")
+```
+
+I am surprised that the numbers for 2015 are so much bigger than for 2000.
+
+## Plots for Bonneville Dam from 1990 to 2018
+
+Each year of data is in one CSV file in a subdirectory of `inst/extdata` with a separate directory for each passage reporting site. Let's look at data for steelhead salmon first:
+
+```{r}
+first_year <- 1990
+last_year <- 2018
+passage_reporting_site_name <- "Bonneville Dam"
+passage_reporting_site_code <- "BON"
+
+# Replace the path components with the location of your data.
+data_directory <- file.path("..", "inst", "extdata", "ColumbiaRiver-FishPassageCenter", "BonnevilleDam")
+
+steelhead <- first_year:last_year %>% 
+  purrr::map(function(year) {get_fpc_data(year, passage_reporting_site_code, data_directory)}) %>% 
+  purrr::reduce(function(x, y) {dplyr::bind_rows(x, y)}) %>% 
+  dplyr::select(Dam, Year, DayOfYear, Steelhead)
+dim(steelhead)
+```
+
+We plot a few years to get a feel for the distribution:
+
+```{r fig.height = 6, fig.width = 8, fig.align = "center"}
+steelhead %>% 
+  filter(Year %in% c(2000, 2005, 2010, 2015)) %>% 
+  ggplot(aes(DayOfYear)) +
+  geom_line(aes(y = Steelhead, color = factor(Year))) +
+  ggtitle(
+    glue("{passage_reporting_site}: Daily Count of Adult {species} Returns",
+         passage_reporting_site = passage_reporting_site_name,
+         species = "Steelhead")) +
+  scale_x_continuous(name = "Day of Year", breaks = seq(0, 350, by = 50)) +
+  scale_y_continuous(name = "Daily Count", limits = c(0, 10000), breaks = seq(0, 10000, by = 2000))
+```
+
+I notice that 2010 and 2015 have higher peaks than 2000 and 2005, but I thought that numbers were descreasing. Let's look more closely at the yearly trend. In the next plot, we compare total quantity for the whole year.
+
+```{r fig.height = 6, fig.width = 8, fig.align = "center"}
+steelhead %>% 
+  dplyr::group_by(Year) %>% 
+  dplyr::mutate(Quantity = sum(Steelhead)) %>%
+  ggplot(aes(Year, Quantity)) +
+  geom_bar(stat = "identity") +
+  ggtitle(
+    glue("{passage_reporting_site}: Yearly Total of Adult {species} Returns",
+         passage_reporting_site = passage_reporting_site_name,
+         species = "Steelhead")) +
+  scale_x_continuous(name = "Year", breaks = seq(1990, 2015, by = 5)) +
+  scale_y_continuous(name = "Yearly Total", labels = function(x){format(x, scientific = FALSE, big.mark = ",")})
 ```
 
 ## References

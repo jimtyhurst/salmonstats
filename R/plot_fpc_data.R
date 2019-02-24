@@ -25,6 +25,6 @@ plot_single_fpc_file <- function(x, year, passage_reporting_site
       glue("{passage_reporting_site}: Quantity of Adult Returns for All Species [Year: {year}]",
            passage_reporting_site = passage_reporting_site,
            year = year)) +
-    xlab("Day of Year") +
-    ylab("Daily Count")
+    scale_x_continuous(name = "Day of Year", breaks = seq(0, 350, by = 50)) +
+    scale_y_continuous(name = "Daily Count", breaks = seq(0, 50000, by = 10000), limits = c(0, 50000))
 }
