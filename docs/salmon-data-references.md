@@ -1,7 +1,4 @@
----
-title: Salmon Data References
-numbersections: true
----
+# Salmon Data References
 
 [Jim Tyhurst](https://www.jimtyhurst.com/)  
 2019-02-23
