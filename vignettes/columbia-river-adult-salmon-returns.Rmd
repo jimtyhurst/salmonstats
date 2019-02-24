@@ -1,0 +1,71 @@
+---
+title: "Data Exploration: Columbia River Adult Salmon Returns"
+author: "[Jim Tyhurst](https://www.jimtyhurst.com/)"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+## Configuration
+```{r}
+library(salmonstats)
+library(glue)
+library(tidyverse)
+```
+
+## Data preparation
+
+Daily counts were obtained by manually selecting search parameters from the [Fish Passage Center](http://www.fpc.org/)'s [Adult Data Query](http://www.fpc.org/web/apps/adultsalmon/Q_adultcounts_dataquery.php) page:
+
+* _passage reporting site_ : This exploration uses observations from the [Bonneville Dam](https://www.nwp.usace.army.mil/bonneville/), which is abbreviated as 'BON' in the 'Dam' column of the data.
+* _species_ : I always left the default value 'All Species'.
+* _start date_ : I always selected 'January 1' of the selected year.
+* _end date_ : I always selected 'December 31' of the selected year.
+
+After downloading each file of data, the final two lines of each file needed to be deleted, because they were annotations that were _not_ part of the data to be analyzed. Then I changed the name of the files to match this pattern:
+
+> fpc-salmon-{passage_reporting_site_abbreviation}-{year}0101-{year}1231.csv
+
+For example, the following files are for data from Bonneville Dam (BON) from years 2000 and 2015, respectively:
+
+> fpc_salmon-BON-20000101-20001231.csv  
+> fpc_salmon-BON-20150101-20001231.csv
+
+Metadata is available from the [Fish Passage Center Adult Metadata](http://www.fpc.org/documents/metadata/FPC_Adult_Metadata.html) web page.
+
+```{r warning='hide'}
+# Replace the path components with the location of your data.
+data_directory <- file.path("~", "data", "salmon", "ColumbiaRiver", "FishPassageCenter", "BonnevilleDam")
+
+bon2000 <- get_fpc_data(2000, "BON", data_directory)
+bon2015 <- get_fpc_data(2015, "BON", data_directory)
+```
+
+## Plots for Bonneville Dam for years 2000 and 2015
+
+```{r fig.height = 6, fig.width = 8, fig.align = "center"}
+plot_single_fpc_file(bon2000, 2000, "Bonneville Dam")
+```
+
+
+```{r fig.height = 6, fig.width = 8, fig.align = "center"}
+plot_single_fpc_file(bon2015, 2015, "Bonneville Dam")
+```
+
+## References
+
+Source code: https://github.com/jimtyhurst/salmonstats
+
+Data source: http://www.fpc.org/web/apps/adultsalmon/Q_adultcounts_dataquery.php
+
+Metadata: http://www.fpc.org/documents/metadata/FPC_Adult_Metadata.html

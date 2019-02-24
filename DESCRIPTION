@@ -1,0 +1,28 @@
+Package: salmonstats
+Title: Functions to Explore, Analyze, and Visualize Open Data about Salmon
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Jim",
+           family = "Tyhurst",
+           role = c("aut", "cre"),
+           email = "jim@jimtyhurst.com")
+Description: Functions to explore, analyze, and visualize open data about
+    salmon, especially with respect to Open Source data that is being 
+    organized by the [International Salmon Data Laboratory](https://yearofthesalmon.org/project/international-salmon-data-laboratory/) 
+    (ISDL) for the [International Year of the Salmon](https://yearofthesalmon.org/).
+License: Apache License (>= 2.0)
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.5.2)
+Imports:
+    descriptr (>= 0.5.0),
+    glue (>= 1.3.0),
+    tidyverse (>= 1.2.1)
+Suggests: 
+    knitr (>= 1.21),
+    remotes (>= 2.0.2),
+    roxygen2 (>= 6.1.1),
+    testthat (>= 2.0.1),
+    rmarkdown (>= 1.11)
+RoxygenNote: 6.1.1
+VignetteBuilder: knitr

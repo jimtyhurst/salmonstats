@@ -1,0 +1,48 @@
+---
+title: "NuSEDS Adult Salmon Escapement Data"
+author: "[Jim Tyhurst](https://www.jimtyhurst.com/)"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r}
+library(salmonstats)
+library(descriptr)
+library(tidyverse)
+```
+
+## New Salmon Escapement Database System (NuSEDS)
+
+[NuSEDS](https://open.canada.ca/en/suggested-datasets/new-salmon-escapement-database-nuseds) is the Pacific Region’s centralized Oracle database that holds adult salmon escapement data. About 10,000 salmon spawning sites in DFO Pacific Region have been observed 0 to 10 times per year for 6 species for nearly 100 years (poorly before 1948). Data is aggregated within year; the raw data is largely on paper.
+
+* zip file containing NUSEDS_20180416.csv  
+    http://www.pac.dfo-mpo.gc.ca/od-ds/science/sed-des/NUSEDS_20180416.zip
+* meta data  
+    https://open.canada.ca/data/en/dataset/c48669a3-045b-400d-b730-48aafe8c5ee6
+
+```{r}
+ns18 <- get_nused_data()
+dim(ns18)
+```
+
+```{r}
+descriptr::ds_screener(ns18)
+```
+
+## MAX_ESTIMATE
+The maximum estimated number taken from: NATURAL_ADULT_SPAWNERS, NATURAL_JACK_SPAWNERS, NATURAL_SPAWNERS_TOTAL, ADULT_BROODSTOCK_REMOVALS, JACK_BROODSTOCK_REMOVALS,  TOTAL_BROODSTOCK_REMOVALS, OTHER_REMOVALS, TOTAL_RETURN_TO_RIVER, UNSPECIFIED_RETURNS.
+
+```{r, echo=FALSE}
+plot(ns18$MAX_ESTIMATE)
+```
