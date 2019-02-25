@@ -6,7 +6,7 @@ The goal of salmonstats is to ...
 
 1. [Purpose](#installation)
 1. [Installation](#installation)
-1. [Vignettes](#vignettes)
+1. [Analyses](#analyses)
 1. [License](#license)
 
 ## Purpose
@@ -24,8 +24,8 @@ remotes::install_github("jimtyhurst/salmonstats")
 ## Analyses
 
 * `Rmd` files of data analysis and visualization are provided in the [vignettes](./vignettes/) directory.
-    * [Data Exploration: Columbia River Adult Salmon Returns](./vignettes/columbia-river-adult-salmon-returns.Rmd) ([html output](./docs/columbia-river-adult-salmon-returns.html))
-    * [NuSEDS Adult Salmon Escapement Data](./vignettes/nuseds-adult-salmon-escapement-data.Rmd) ([html output](./docs/nuseds-adult-salmon-escapement-data.html))
+    * [Data Exploration: Columbia River Adult Salmon Returns](./vignettes/columbia-river-adult-salmon-returns.Rmd) ([html output](http://htmlpreview.github.io/?https://github.com/jimtyhurst/salmonstats/blob/master/docs/columbia-river-adult-salmon-returns.html))
+    * [NuSEDS Adult Salmon Escapement Data](./vignettes/nuseds-adult-salmon-escapement-data.Rmd) ([html output](http://htmlpreview.github.io/?https://github.com/jimtyhurst/salmonstats/blob/master/docs/nuseds-adult-salmon-escapement-data.html))
 * [Salmon Data References](./docs/salmon-data-references.md): references to external data sources used in this project.
 
 ## License
