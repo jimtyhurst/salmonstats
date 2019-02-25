@@ -1,6 +1,6 @@
 ---
 title: "Data Exploration: Columbia River Adult Salmon Returns"
-author: "[Jim Tyhurst](https://www.jimtyhurst.com/)"
+author: "[Jim Tyhurst](https://www.jimtyhurst.com/#home)"
 date: "`r Sys.Date()`"
 output:
   rmarkdown::html_vignette:
@@ -20,6 +20,8 @@ knitr::opts_chunk$set(
 ```
 
 <span style="color:red">_Work in Process_ ...</span>
+
+Source code at: https://github.com/jimtyhurst/salmonstats/blob/master/vignettes/columbia-river-adult-salmon-returns.Rmd
 
 ## Configuration
 ```{r}

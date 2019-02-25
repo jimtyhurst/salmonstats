@@ -29,6 +29,7 @@
 
 ## [International Salmon Data Laboratory](https://yearofthesalmon.org/project/international-salmon-data-laboratory/) (ISDL)
 
+* [GitHub repository](https://github.com/int-salmon-data-lab/)
 * [A Prolegomena for ISDL](https://docs.google.com/document/d/1aZNCDmqZwhVQWHo_XsXs2f_VI0Wx_Ae4l2GRaYcoYw4/): An introduction to ISDL as a [project](https://yearofthesalmon.org/project/international-salmon-data-laboratory/) within the [International Year of the Salmon](https://yearofthesalmon.org/).
 * Webcasts
 
@@ -47,7 +48,7 @@
 ## ISDL Sources of salmon data
 
 See more detailed information about these data sources in posts by Scott Akenhead at:  
-    https://community.neo4j.com/t/international-salmon-data-laboratory/2033/5
+    https://community.neo4j.com/t/international-salmon-data-laboratory/2033/6
 
 ### New Salmon Escapement Database System (NuSEDS)
 [NuSEDS](https://open.canada.ca/en/suggested-datasets/new-salmon-escapement-database-nuseds) is the Pacific Region’s centralized Oracle database that holds adult salmon escapement data. About 10,000 salmon spawning sites in DFO Pacific Region have been observed 0 to 10 times per year for 6 species for nearly 100 years (poorly before 1948). Data is aggregated within year; the raw data is largely on paper.
@@ -127,5 +128,6 @@ Darwin Core is a standard that includes a glossary of terms (in other contexts t
 
 * Daily counts obtained from the [Fish Passage Center](http://www.fpc.org/)'s [query page](http://www.fpc.org/web/apps/adultsalmon/Q_adultcounts_dataquery.php)
 * Metadata: [Fish Passage Center Adult Metadata](http://www.fpc.org/documents/metadata/FPC_Adult_Metadata.html)
+* My [exploratory data analysis](http://htmlpreview.github.io/?https://github.com/jimtyhurst/salmonstats/blob/master/docs/columbia-river-adult-salmon-returns.html) of Columbia River Adult Salmon Returns.
 
 ---
