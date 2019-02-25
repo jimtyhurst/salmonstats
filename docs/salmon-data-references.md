@@ -1,7 +1,7 @@
 # Salmon Data References
 
 [Jim Tyhurst](https://www.jimtyhurst.com/)  
-2019-02-23
+2019-02-25
 
 **Table of Contents**
 
@@ -46,41 +46,44 @@
 
 ## ISDL Sources of salmon data
 
-See more detailed information about these data sources in posts by Scott Akenhead at https://community.neo4j.com/t/international-salmon-data-laboratory/2033/5
+See more detailed information about these data sources in posts by Scott Akenhead at:  
+    https://community.neo4j.com/t/international-salmon-data-laboratory/2033/5
 
 ### New Salmon Escapement Database System (NuSEDS)
 [NuSEDS](https://open.canada.ca/en/suggested-datasets/new-salmon-escapement-database-nuseds) is the Pacific Region’s centralized Oracle database that holds adult salmon escapement data. About 10,000 salmon spawning sites in DFO Pacific Region have been observed 0 to 10 times per year for 6 species for nearly 100 years (poorly before 1948). Data is aggregated within year; the raw data is largely on paper.
 
-* zip file containing NUSEDS_20180416.csv
+* zip file containing NUSEDS_20180416.csv  
     http://www.pac.dfo-mpo.gc.ca/od-ds/science/sed-des/NUSEDS_20180416.zip
-* meta data
+* meta data  
     https://open.canada.ca/data/en/dataset/c48669a3-045b-400d-b730-48aafe8c5ee6
 
 ### Pacific Region Commercial Salmon Fishery In-season Catch Estimates
 The spatial pattern of fishing (8 areas), by species (6), gear (3), and year (2004-2017).
 
-* zip file
+* zip file  
     https://www.pac.dfo-mpo.gc.ca/od-ds/science/species-especes/salmon-saumon/ise-ecs.zip
-* meta data
+* meta data  
     https://open.canada.ca/data/en/dataset/7ac5fe02-308d-4fff-b805-80194f8ddeb4
 
 ### North Pacific Salmon Abundance and Biomass Data
 
-* spreadsheet in Google Documents
+* spreadsheet in Google Documents  
     [Data - Ruggerone and Irvine 2018 North Pacific Salmon Abundance and Biomass Data 14 Feb 2018.xlsx](https://docs.google.com/a/s4s.com/viewer?a=v&pid=sites&srcid=czRzLmNvbXxzb2NrZXllLWN1bXVsYXRpdmUtaW1wYWN0c3xneDo3MDE1NzdlMjRkZTg2MGIw)
 * Tables and graphs generated from the data:
     * Gregory T. Ruggerone and James R. Irvine. 2018-04-04. Numbers and Biomass of Natural‐ and Hatchery‐Origin Pink Salmon, Chum Salmon, and Sockeye Salmon in the North Pacific Ocean, 1925–2015. https://afspubs.onlinelibrary.wiley.com/doi/full/10.1002/mcf2.10023
-    * Nelson Bennett. 2018-04-10. Pacific salmon ‘more abundant than ever’, new study claims. Business in Vancouver. https://biv.com/article/2018/04/pacific-salmon-more-abundant-ever-new-study-claims
+    * Nelson Bennett. 2018-04-10. Pacific salmon ‘more abundant than ever’, new study claims. Business in Vancouver.  
+    https://biv.com/article/2018/04/pacific-salmon-more-abundant-ever-new-study-claims
 
 ### NPAFC Statistics: Pacific Salmonid Catch and Hatchery Release Data
 
-* Links to data and meta data for the North Pacific Anadromous Fish Commission (NPAFC), which includes participation from 5 countries (US, RU, JP, SK, CA): https://npafc.org/statistics/
+* Links to data and meta data for the North Pacific Anadromous Fish Commission (NPAFC), which includes participation from 5 countries (US, RU, JP, SK, CA):  
+    https://npafc.org/statistics/
 * Returns and Spawners for Sockeye, Pink, and Chum Salmon from British Columbia  
 Productivity (recruits per spawner) estimates for BC sockeye, pink, and chum salmon. Annual estimates by brood year of spawner numbers, catch, and population and age composition are in a simple database.
 
     * A.D. Ogden et al. 2015. Productivity (Recruits-per-Spawner) Data for Sockeye, Pink, and Chum Salmon from British Columbia.  
     ftp://ftp.meds-sdmm.dfo-mpo.gc.ca/pub/openData/Recruits_Spawner/Canadian_Technical_Report_3130.pdf
-    * Links to data and meta data  
+    * Links to data and meta data:  
     https://open.canada.ca/data/en/dataset/3d659575-4125-44b4-8d8f-c050d6624758
 
 ### Graph DB schemas for the data
@@ -121,7 +124,7 @@ Darwin Core is a standard that includes a glossary of terms (in other contexts t
 
 ### Adult Returns for Columbia and Snake River Dams
 
-* Daily counts obtained from the: [Fish Passage Center](http://www.fpc.org/)'s [query page](http://www.fpc.org/web/apps/adultsalmon/Q_adultcounts_dataquery.php)
+* Daily counts obtained from the [Fish Passage Center](http://www.fpc.org/)'s [query page](http://www.fpc.org/web/apps/adultsalmon/Q_adultcounts_dataquery.php)
 * Metadata: [Fish Passage Center Adult Metadata](http://www.fpc.org/documents/metadata/FPC_Adult_Metadata.html)
 
 ---
