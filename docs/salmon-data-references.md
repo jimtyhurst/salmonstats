@@ -32,14 +32,14 @@
 * [A Prolegomena for ISDL](https://docs.google.com/document/d/1aZNCDmqZwhVQWHo_XsXs2f_VI0Wx_Ae4l2GRaYcoYw4/): An introduction to ISDL as a [project](https://yearofthesalmon.org/project/international-salmon-data-laboratory/) within the [International Year of the Salmon](https://yearofthesalmon.org/).
 * Webcasts
 
-    * Scott Akenhead, International Salmon Data Laboratory (ISDL). 2019-02-07. Overview of recent tools for data assembly, analysis, and visualization. Neo4j Online Meetup #49.
-        Recording: https://www.youtube.com/watch?v=aeVJeeO2Vgc (length: 1:05:24)
-    * Scott Akenhead, Pacific Biological Station. 2018-09-20. International Salmon Data Laboratory. GraphConnect, New York City.
-        Recording: https://www.youtube.com/watch?v=ZNWEBoduACk (length: 18:55)
+    * Scott Akenhead, International Salmon Data Laboratory (ISDL). 2019-02-07. Overview of recent tools for data assembly, analysis, and visualization. Neo4j Online Meetup #49.  
+        Recording: https://www.youtube.com/watch?v=aeVJeeO2Vgc (length: 1:05:24).
+    * Scott Akenhead, Pacific Biological Station. 2018-09-20. International Salmon Data Laboratory. GraphConnect, New York City.  
+        Recording: https://www.youtube.com/watch?v=ZNWEBoduACk (length: 18:55).  
         Abstract and slides: https://neo4j.com/graphconnect-2018/session/international-salmon-data-lab?_ga=2.201563026.2051043616.1549557272-560309801.1548951192
 * Online discussions
 
-    * Neo4j Community Site thread for the International Salmon Data Laboratory project.
+    * Neo4j Community Site thread for the International Salmon Data Laboratory project.  
         https://community.neo4j.com/t/international-salmon-data-laboratory/2033
 
 ---
@@ -70,7 +70,8 @@ The spatial pattern of fishing (8 areas), by species (6), gear (3), and year (20
 * spreadsheet in Google Documents  
     [Data - Ruggerone and Irvine 2018 North Pacific Salmon Abundance and Biomass Data 14 Feb 2018.xlsx](https://docs.google.com/a/s4s.com/viewer?a=v&pid=sites&srcid=czRzLmNvbXxzb2NrZXllLWN1bXVsYXRpdmUtaW1wYWN0c3xneDo3MDE1NzdlMjRkZTg2MGIw)
 * Tables and graphs generated from the data:
-    * Gregory T. Ruggerone and James R. Irvine. 2018-04-04. Numbers and Biomass of Natural‐ and Hatchery‐Origin Pink Salmon, Chum Salmon, and Sockeye Salmon in the North Pacific Ocean, 1925–2015. https://afspubs.onlinelibrary.wiley.com/doi/full/10.1002/mcf2.10023
+    * Gregory T. Ruggerone and James R. Irvine. 2018-04-04. Numbers and Biomass of Natural‐ and Hatchery‐Origin Pink Salmon, Chum Salmon, and Sockeye Salmon in the North Pacific Ocean, 1925–2015.  
+    https://afspubs.onlinelibrary.wiley.com/doi/full/10.1002/mcf2.10023
     * Nelson Bennett. 2018-04-10. Pacific salmon ‘more abundant than ever’, new study claims. Business in Vancouver.  
     https://biv.com/article/2018/04/pacific-salmon-more-abundant-ever-new-study-claims
 
