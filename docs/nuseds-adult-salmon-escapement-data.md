@@ -1,4 +1,4 @@
-NuSEDS Adult Salmon Escapement Data
+NuSEDS Adult Salmon Escapement Data: Exploratory Data Analysis
 ================
 [Jim Tyhurst](https://www.jimtyhurst.com/)
 2019-02-26
@@ -164,7 +164,8 @@ UNSPECIFIED\_RETURNS.
 
 ## References
 
-Source code: [vignettes](../vignettes/)
+Source code:
+[nuseds-adult-salmon-escapement-data.Rmd](../vignettes/nuseds-adult-salmon-escapement-data.Rmd)
 
 NUSEDS\_20180416.csv  
 <http://www.pac.dfo-mpo.gc.ca/od-ds/science/sed-des/NUSEDS_20180416.zip>

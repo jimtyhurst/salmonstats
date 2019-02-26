@@ -1,4 +1,4 @@
-Data Exploration: Columbia River Adult Salmon Returns
+Columbia River Adult Salmon Returns: Exploratory Data Analysis
 ================
 [Jim Tyhurst](https://www.jimtyhurst.com/#home)
 2019-02-26
@@ -166,7 +166,8 @@ steelhead  %>%
 
 ## References
 
-Source code: [vignettes](../vignettes/)
+Source code:
+[columbia-river-adult-salmon-returns.Rmd](../vignettes/columbia-river-adult-salmon-returns.Rmd)
 
 Data source:
 <http://www.fpc.org/web/apps/adultsalmon/Q_adultcounts_dataquery.php>

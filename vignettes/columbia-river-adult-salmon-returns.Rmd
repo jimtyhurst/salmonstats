@@ -1,5 +1,5 @@
 ---
-title: "Data Exploration: Columbia River Adult Salmon Returns"
+title: "Columbia River Adult Salmon Returns: Exploratory Data Analysis"
 author: "[Jim Tyhurst](https://www.jimtyhurst.com/#home)"
 date: "`r Sys.Date()`"
 output:
@@ -136,7 +136,7 @@ steelhead  %>%
 
 ## References
 
-Source code: [vignettes](../vignettes/)
+Source code: [columbia-river-adult-salmon-returns.Rmd](../vignettes/columbia-river-adult-salmon-returns.Rmd)
 
 Data source: http://www.fpc.org/web/apps/adultsalmon/Q_adultcounts_dataquery.php
 
