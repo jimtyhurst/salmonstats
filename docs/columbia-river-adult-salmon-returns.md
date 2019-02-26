@@ -167,7 +167,7 @@ years.</span>
 
 ## References
 
-Source code: ../
+Source code: [vignettes](../vignettes/)
 
 Data source:
 <http://www.fpc.org/web/apps/adultsalmon/Q_adultcounts_dataquery.php>

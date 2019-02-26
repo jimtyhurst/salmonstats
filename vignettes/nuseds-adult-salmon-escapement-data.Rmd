@@ -58,7 +58,7 @@ plot(ns18$MAX_ESTIMATE)
 
 ## References
 
-Source code: ../
+Source code: [vignettes](../vignettes/)
 
 NUSEDS_20180416.csv  
     http://www.pac.dfo-mpo.gc.ca/od-ds/science/sed-des/NUSEDS_20180416.zip
