@@ -3,9 +3,10 @@ NuSEDS Adult Salmon Escapement Data
 [Jim Tyhurst](https://www.jimtyhurst.com/)
 2019-02-26
 
-<span style="color:red">*Work in Process* …</span>
+🔻 *Work in Process* … 🔺
 
-Source code at: ../vignettes/nuseds-adult-salmon-escapement-data.Rmd
+Source code at:
+[nuseds-adult-salmon-escapement-data.Rmd](../vignettes/nuseds-adult-salmon-escapement-data.Rmd)
 
 ## Configuration
 

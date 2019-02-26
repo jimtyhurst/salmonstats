@@ -19,9 +19,9 @@ knitr::opts_chunk$set(
 )
 ```
 
-<span style="color:red">_Work in Process_ ...</span>
+&#x1F53B;&nbsp;_Work in Process_ ...&nbsp;&#x1F53A;
 
-Source code at: ../vignettes/columbia-river-adult-salmon-returns.Rmd
+Source code at: [columbia-river-adult-salmon-returns.Rmd](../vignettes/columbia-river-adult-salmon-returns.Rmd)
 
 ## Configuration
 ```{r}
@@ -51,7 +51,7 @@ For example, the following files are for data from Bonneville Dam (BON) from yea
 
 Metadata is available from the [Fish Passage Center Adult Metadata](http://www.fpc.org/documents/metadata/FPC_Adult_Metadata.html) web page. In particular, Bonneville Dam data only has observations from March 15 to November 15 for years up to 2001. Starting in 2002, observations were made every day during the year.
 
-<span style="color:red">_Open Issue_: There are quite a few daily count values that are negative. What does that mean? More fish went downstream through the passage reporting site than upstream? I looked through the [metadata](http://www.fpc.org/documents/metadata/FPC_Adult_Metadata.html), but I did not see an explanation for these negative field values.</span>
+&#x1F53B;&nbsp;_Open Issue_: There are quite a few daily count values that are negative. What does that mean? More fish went downstream through the passage reporting site than upstream? I looked through the [metadata](http://www.fpc.org/documents/metadata/FPC_Adult_Metadata.html), but I did not see an explanation for these negative field values.&nbsp;&#x1F53A;
 
 ```{r message=FALSE}
 # Replace the path components with the location of your data.
@@ -112,7 +112,7 @@ I am surprised that 2010 and 2015 have higher peaks than 2000 and 2005, because 
 
 Since years before 2002 only collected data from March 15 to November 15, we exclude observations from outside those days from 2002 and later, in order to be comparing similar sets of data.
 
-<span style="color:red">_To Do_: Fix the following calculation to work for leap years.</span>
+&#x1F53B;&nbsp;_To Do_: Fix the following calculation to work for leap years.&nbsp;&#x1F53A;
 
 ```{r fig.height = 6, fig.width = 8, fig.align = "center"}
 first_observation_day <- 74  # March 15, except for leap year
@@ -132,7 +132,7 @@ steelhead  %>%
   scale_y_continuous(name = "Returns Counted", labels = function(x){format(x, scientific = FALSE, big.mark = ",")})
 ```
 
-<span style="color:red">_To Do_: Extend this plot to earlier years.</span>
+&#x1F53B;&nbsp;_To Do_: Extend this plot to earlier years.&nbsp;&#x1F53A;
 
 ## References
 

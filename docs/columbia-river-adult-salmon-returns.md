@@ -3,9 +3,10 @@ Data Exploration: Columbia River Adult Salmon Returns
 [Jim Tyhurst](https://www.jimtyhurst.com/#home)
 2019-02-26
 
-<span style="color:red">*Work in Process* …</span>
+🔻 *Work in Process* … 🔺
 
-Source code at: ../vignettes/columbia-river-adult-salmon-returns.Rmd
+Source code at:
+[columbia-river-adult-salmon-returns.Rmd](../vignettes/columbia-river-adult-salmon-returns.Rmd)
 
 ## Configuration
 
@@ -55,11 +56,11 @@ web page. In particular, Bonneville Dam data only has observations from
 March 15 to November 15 for years up to 2001. Starting in 2002,
 observations were made every day during the year.
 
-<span style="color:red">*Open Issue*: There are quite a few daily count
-values that are negative. What does that mean? More fish went downstream
-through the passage reporting site than upstream? I looked through the
+🔻 *Open Issue*: There are quite a few daily count values that are
+negative. What does that mean? More fish went downstream through the
+passage reporting site than upstream? I looked through the
 [metadata](http://www.fpc.org/documents/metadata/FPC_Adult_Metadata.html),
-but I did not see an explanation for these negative field values.</span>
+but I did not see an explanation for these negative field values. 🔺
 
 ``` r
 # Replace the path components with the location of your data.
@@ -139,8 +140,7 @@ Since years before 2002 only collected data from March 15 to November
 15, we exclude observations from outside those days from 2002 and later,
 in order to be comparing similar sets of data.
 
-<span style="color:red">*To Do*: Fix the following calculation to work
-for leap years.</span>
+🔻 *To Do*: Fix the following calculation to work for leap years. 🔺
 
 ``` r
 first_observation_day <- 74  # March 15, except for leap year
@@ -162,8 +162,7 @@ steelhead  %>%
 
 <img src="columbia-river-adult-salmon-returns_files/figure-gfm/unnamed-chunk-7-1.png" style="display: block; margin: auto;" />
 
-<span style="color:red">*To Do*: Extend this plot to earlier
-years.</span>
+🔻 *To Do*: Extend this plot to earlier years. 🔺
 
 ## References
 

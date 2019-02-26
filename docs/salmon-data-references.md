@@ -128,6 +128,6 @@ Darwin Core is a standard that includes a glossary of terms (in other contexts t
 
 * Daily counts obtained from the [Fish Passage Center](http://www.fpc.org/)'s [query page](http://www.fpc.org/web/apps/adultsalmon/Q_adultcounts_dataquery.php)
 * Metadata: [Fish Passage Center Adult Metadata](http://www.fpc.org/documents/metadata/FPC_Adult_Metadata.html)
-* My [exploratory data analysis](http://htmlpreview.github.io/?https://github.com/jimtyhurst/salmonstats/blob/master/docs/columbia-river-adult-salmon-returns.html) of Columbia River Adult Salmon Returns.
+* My [exploratory data analysis](./columbia-river-adult-salmon-returns.md) of Columbia River Adult Salmon Returns.
 
 ---
