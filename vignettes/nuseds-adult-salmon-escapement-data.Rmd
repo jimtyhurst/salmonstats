@@ -1,5 +1,5 @@
 ---
-title: "NuSEDS Adult Salmon Escapement Data"
+title: "NuSEDS Adult Salmon Escapement Data: Exploratory Data Analysis"
 author: "[Jim Tyhurst](https://www.jimtyhurst.com/)"
 date: "`r Sys.Date()`"
 output:
@@ -58,7 +58,7 @@ plot(ns18$MAX_ESTIMATE)
 
 ## References
 
-Source code: [vignettes](../vignettes/)
+Source code: [nuseds-adult-salmon-escapement-data.Rmd](../vignettes/nuseds-adult-salmon-escapement-data.Rmd)
 
 NUSEDS_20180416.csv  
     http://www.pac.dfo-mpo.gc.ca/od-ds/science/sed-des/NUSEDS_20180416.zip
