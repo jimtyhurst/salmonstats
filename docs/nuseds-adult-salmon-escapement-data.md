@@ -163,7 +163,7 @@ UNSPECIFIED\_RETURNS.
 
 ## References
 
-Source code: ../
+Source code: [vignettes](../vignettes/)
 
 NUSEDS\_20180416.csv  
 <http://www.pac.dfo-mpo.gc.ca/od-ds/science/sed-des/NUSEDS_20180416.zip>
