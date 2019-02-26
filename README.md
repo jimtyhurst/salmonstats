@@ -14,7 +14,7 @@ The goal for developing this package is to provide functions for exploring, anal
 
 ## Installation
 
-You can install the latest (development) version of `salmonstats` from [GitHub](https://github.com/jimtyhurst) using the `install_github` command in R:
+You can install the latest (development) version of `salmonstats` from [GitHub](./) using the `install_github` command in R:
 
 ``` r
 remotes::install_github("jimtyhurst/salmonstats")
@@ -28,8 +28,8 @@ remotes::install_github("jimtyhurst/salmonstats")
 ## Analyses
 
 * `Rmd` files of data analysis and visualization are provided in the [vignettes](./vignettes/) directory.
-    * [Data Exploration: Columbia River Adult Salmon Returns](./vignettes/columbia-river-adult-salmon-returns.Rmd) ([html output](http://htmlpreview.github.io/?https://github.com/jimtyhurst/salmonstats/blob/master/docs/columbia-river-adult-salmon-returns.html))
-    * [NuSEDS Adult Salmon Escapement Data](./vignettes/nuseds-adult-salmon-escapement-data.Rmd) ([html output](http://htmlpreview.github.io/?https://github.com/jimtyhurst/salmonstats/blob/master/docs/nuseds-adult-salmon-escapement-data.html))
+    * Data Exploration: Columbia River Adult Salmon Returns ([source](./vignettes/columbia-river-adult-salmon-returns.Rmd)) ([output](./docs/columbia-river-adult-salmon-returns.md))
+    * NuSEDS Adult Salmon Escapement Data ([source](./vignettes/nuseds-adult-salmon-escapement-data.Rmd)) ([output](./docs/nuseds-adult-salmon-escapement-data.md))
 
 ## License
 
