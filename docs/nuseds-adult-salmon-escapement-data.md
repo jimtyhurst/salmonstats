@@ -3,6 +3,12 @@ NuSEDS Adult Salmon Escapement Data
 [Jim Tyhurst](https://www.jimtyhurst.com/)
 2019-02-26
 
+<span style="color:red">*Work in Process* …</span>
+
+Source code at: ../vignettes/nuseds-adult-salmon-escapement-data.Rmd
+
+## Configuration
+
 ``` r
 library(salmonstats)
 library(descriptr)
@@ -154,3 +160,14 @@ TOTAL\_BROODSTOCK\_REMOVALS, OTHER\_REMOVALS, TOTAL\_RETURN\_TO\_RIVER,
 UNSPECIFIED\_RETURNS.
 
 ![](nuseds-adult-salmon-escapement-data_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
+
+## References
+
+Source code: ../
+
+NUSEDS\_20180416.csv  
+<http://www.pac.dfo-mpo.gc.ca/od-ds/science/sed-des/NUSEDS_20180416.zip>
+
+NuSEDS meta
+data  
+<https://open.canada.ca/data/en/dataset/c48669a3-045b-400d-b730-48aafe8c5ee6>

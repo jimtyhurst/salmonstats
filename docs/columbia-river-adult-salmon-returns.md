@@ -5,8 +5,7 @@ Data Exploration: Columbia River Adult Salmon Returns
 
 <span style="color:red">*Work in Process* …</span>
 
-Source code at:
-<https://github.com/jimtyhurst/salmonstats/blob/master/vignettes/columbia-river-adult-salmon-returns.Rmd>
+Source code at: ../vignettes/columbia-river-adult-salmon-returns.Rmd
 
 ## Configuration
 
@@ -168,7 +167,7 @@ years.</span>
 
 ## References
 
-Source code: <https://github.com/jimtyhurst/salmonstats>
+Source code: ../
 
 Data source:
 <http://www.fpc.org/web/apps/adultsalmon/Q_adultcounts_dataquery.php>

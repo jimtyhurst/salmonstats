@@ -2,7 +2,10 @@
 title: "NuSEDS Adult Salmon Escapement Data"
 author: "[Jim Tyhurst](https://www.jimtyhurst.com/)"
 date: "`r Sys.Date()`"
-output: github_document
+output:
+  github_document:
+    toc: true
+numbersections: true
 vignette: >
   %\VignetteIndexEntry{Vignette Title}
   %\VignetteEngine{knitr::rmarkdown}
@@ -15,6 +18,12 @@ knitr::opts_chunk$set(
   comment = "#>"
 )
 ```
+
+<span style="color:red">_Work in Process_ ...</span>
+
+Source code at: ../vignettes/nuseds-adult-salmon-escapement-data.Rmd
+
+## Configuration
 
 ```{r}
 library(salmonstats)
@@ -46,3 +55,13 @@ The maximum estimated number taken from: NATURAL_ADULT_SPAWNERS, NATURAL_JACK_SP
 ```{r, echo=FALSE}
 plot(ns18$MAX_ESTIMATE)
 ```
+
+## References
+
+Source code: ../
+
+NUSEDS_20180416.csv  
+    http://www.pac.dfo-mpo.gc.ca/od-ds/science/sed-des/NUSEDS_20180416.zip
+
+NuSEDS meta data  
+    https://open.canada.ca/data/en/dataset/c48669a3-045b-400d-b730-48aafe8c5ee6
