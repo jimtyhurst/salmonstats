@@ -89,6 +89,8 @@ The spatial pattern of fishing (8 areas), by species (6), gear (3), and year (20
         [NPAFC_Catch_Stat_31July2018_Web.xls](https://npafc.org/wp-content/uploads/NPAFC_Catch_Stat_31July2018_Web.xls)
         * NPAFC Hatchery Release Statistics (updated 31 July 2018)  
         [NPAFC_Hatchery_Rel_Stat_31July2018_Web.xls](https://npafc.org/wp-content/uploads/NPAFC_Hatchery_Rel_Stat_31July2018_Web.xls)
+        * Statistics Metadata Report (updated 31 July 2018)  
+        [Metadata_31July2018_Web.pdf](https://npafc.org/wp-content/uploads/Metadata_31July2018_Web.pdf)
 * Returns and Spawners for Sockeye, Pink, and Chum Salmon from British Columbia  
 Productivity (recruits per spawner) estimates for BC sockeye, pink, and chum salmon. Annual estimates by brood year of spawner numbers, catch, and population and age composition are in a simple database.
 
@@ -136,7 +138,7 @@ Referenced at the [Community Site](https://community.neo4j.com/t/international-s
 ### Adult Returns for Columbia and Snake River Dams
 
 * My [exploratory data analysis](./columbia-river-adult-salmon-returns.md) of Columbia River Adult Salmon Returns.
-* Daily counts obtained from the [Fish Passage Center](http://www.fpc.org/)'s [query page](http://www.fpc.org/web/apps/adultsalmon/Q_adultcounts_dataquery.php)
+* Daily counts were obtained from the [Fish Passage Center](http://www.fpc.org/)'s [query page](http://www.fpc.org/web/apps/adultsalmon/Q_adultcounts_dataquery.php)
 * Metadata: [Fish Passage Center Adult Metadata](http://www.fpc.org/documents/metadata/FPC_Adult_Metadata.html)
 
 ---
