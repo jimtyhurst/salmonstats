@@ -97,9 +97,19 @@ The spatial pattern of fishing (8 areas), by species (6), gear (3), and year (20
 Productivity (recruits per spawner) estimates for BC sockeye, pink, and chum salmon. Annual estimates by brood year of spawner numbers, catch, and population and age composition are in a simple database.
 
 * A.D. Ogden et al. 2015. Productivity (Recruits-per-Spawner) Data for Sockeye, Pink, and Chum Salmon from British Columbia.  
-    [Canadian_Technical_Report_3130.pdf](ftp://ftp.meds-sdmm.dfo-mpo.gc.ca/pub/openData/Recruits_Spawner/Canadian_Technical_Report_3130.pdf)
+    Canadian_Technical_Report_3130.pdf  
+    ftp://ftp.meds-sdmm.dfo-mpo.gc.ca/pub/openData/Recruits_Spawner/Canadian_Technical_Report_3130.pdf
 * Links to data and meta data:  
+    * project page  
     https://open.canada.ca/data/en/dataset/3d659575-4125-44b4-8d8f-c050d6624758
+    * Salmon Recruits per Spawner Data  
+    ftp://ftp.meds-sdmm.dfo-mpo.gc.ca/pub/openData/Recruits_Spawner/Salmon_RS_Database.csv
+    * Metadata  
+    ftp://ftp.meds-sdmm.dfo-mpo.gc.ca/pub/openData/Recruits_Spawner/Salmon_RS_Field_Definitions.csv
+    * Time Series Summary  
+    ftp://ftp.meds-sdmm.dfo-mpo.gc.ca/pub/openData/Recruits_Spawner/Salmon_RS_Time_Series_Summary.csv
+    * Decadel Summary  
+    ftp://ftp.meds-sdmm.dfo-mpo.gc.ca/pub/openData/Recruits_Spawner/Salmon_RS_Decadal_Summary.csv
 
 ### Graph DB schemas for the data
 
