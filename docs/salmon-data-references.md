@@ -1,11 +1,12 @@
 # Salmon Data References
 
 [Jim Tyhurst](https://www.jimtyhurst.com/)  
-2019-02-26
+2019-03-05
 
 **Table of Contents**
 
 1. [International Year of the Salmon](#international-year-of-the-salmon)
+    1. [Events](#events)
 1. [International Salmon Data Laboratory](#international-salmon-data-laboratory)
 1. [ISDL Sources of salmon data](#isdl-sources-of-salmon-data)
     1. [New Salmon Escapement Database System (NuSEDS)](#new-salmon-escapement-database-system-nuseds)
@@ -64,22 +65,32 @@ The spatial pattern of fishing (8 areas), by species (6), gear (3), and year (20
 * zip file  
     https://www.pac.dfo-mpo.gc.ca/od-ds/science/species-especes/salmon-saumon/ise-ecs.zip
 * meta data  
-    https://open.canada.ca/data/en/dataset/7ac5fe02-308d-4fff-b805-80194f8ddeb4
+    * https://open.canada.ca/data/en/dataset/7ac5fe02-308d-4fff-b805-80194f8ddeb4
+    * https://pacgis01.dfo-mpo.gc.ca/FGPPublic/Fishery_Operations_System_Commercial_Salmon/Data_Dictionary_FOS.htm
 
 ### North Pacific Salmon Abundance and Biomass Data
 
-* spreadsheet in Google Documents  
+* Microsoft Excel spreadsheet in Google Documents  
     [Data - Ruggerone and Irvine 2018 North Pacific Salmon Abundance and Biomass Data 14 Feb 2018.xlsx](https://docs.google.com/a/s4s.com/viewer?a=v&pid=sites&srcid=czRzLmNvbXxzb2NrZXllLWN1bXVsYXRpdmUtaW1wYWN0c3xneDo3MDE1NzdlMjRkZTg2MGIw)
+* Microsoft Excel spreadsheet also available for download:  
+    [mcf210023-sup-0001-tables1-s24.xlsx](https://afspubs.onlinelibrary.wiley.com/action/downloadSupplement?doi=10.1002%2Fmcf2.10023&file=mcf210023-sup-0001-TableS1-S24.xlsx)
 * Tables and graphs generated from the data:
     * Gregory T. Ruggerone and James R. Irvine. 2018-04-04. Numbers and Biomass of Natural‐ and Hatchery‐Origin Pink Salmon, Chum Salmon, and Sockeye Salmon in the North Pacific Ocean, 1925–2015.  
-    https://afspubs.onlinelibrary.wiley.com/doi/full/10.1002/mcf2.10023
+        * https://afspubs.onlinelibrary.wiley.com/doi/full/10.1002/mcf2.10023
+        * [Ruggerone_et_al-2018-Marine_and_Coastal_Fisheries.pdf](https://afspubs.onlinelibrary.wiley.com/doi/epdf/10.1002/mcf2.10023)
     * Nelson Bennett. 2018-04-10. Pacific salmon ‘more abundant than ever’, new study claims. Business in Vancouver.  
     https://biv.com/article/2018/04/pacific-salmon-more-abundant-ever-new-study-claims
 
 ### NPAFC Statistics: Pacific Salmonid Catch and Hatchery Release Data
 
-* Links to data and meta data for the North Pacific Anadromous Fish Commission (NPAFC), which includes participation from 5 countries (US, RU, JP, SK, CA):  
-    https://npafc.org/statistics/
+* Links to data and meta data for the North Pacific Anadromous Fish Commission (NPAFC), which includes participation from 5 countries (US, RU, JP, SK, CA):
+    * https://npafc.org/statistics/
+        * NPAFC Catch Statistics (updated 31 July 2018)  
+        [NPAFC_Catch_Stat_31July2018_Web.xls](https://npafc.org/wp-content/uploads/NPAFC_Catch_Stat_31July2018_Web.xls)
+        * NPAFC Hatchery Release Statistics (updated 31 July 2018)  
+        [NPAFC_Hatchery_Rel_Stat_31July2018_Web.xls](https://npafc.org/wp-content/uploads/NPAFC_Hatchery_Rel_Stat_31July2018_Web.xls)
+        * Statistics Metadata Report (updated 31 July 2018)  
+        [Metadata_31July2018_Web.pdf](https://npafc.org/wp-content/uploads/Metadata_31July2018_Web.pdf)
 * Returns and Spawners for Sockeye, Pink, and Chum Salmon from British Columbia  
 Productivity (recruits per spawner) estimates for BC sockeye, pink, and chum salmon. Annual estimates by brood year of spawner numbers, catch, and population and age composition are in a simple database.
 
@@ -114,8 +125,8 @@ Referenced at the [Community Site](https://community.neo4j.com/t/international-s
 
 ---
 
-## [Darwin Core](http://rs.tdwg.org/dwc/)
-Darwin Core is a standard that includes a glossary of terms (in other contexts these might be called properties, elements, fields, columns, attributes, or concepts) intended to facilitate the sharing of information about biological diversity by providing identifiers, labels, and definitions.
+## Darwin Core
+[Darwin Core](http://rs.tdwg.org/dwc/) is a standard that includes a glossary of terms (in other contexts these might be called properties, elements, fields, columns, attributes, or concepts) intended to facilitate the sharing of information about biological diversity by providing identifiers, labels, and definitions.
 
 * [Quick Reference Guide](http://rs.tdwg.org/dwc/terms/)
 * [GitHub repository](https://github.com/tdwg/dwc)
@@ -126,8 +137,8 @@ Darwin Core is a standard that includes a glossary of terms (in other contexts t
 
 ### Adult Returns for Columbia and Snake River Dams
 
-* Daily counts obtained from the [Fish Passage Center](http://www.fpc.org/)'s [query page](http://www.fpc.org/web/apps/adultsalmon/Q_adultcounts_dataquery.php)
-* Metadata: [Fish Passage Center Adult Metadata](http://www.fpc.org/documents/metadata/FPC_Adult_Metadata.html)
 * My [exploratory data analysis](./columbia-river-adult-salmon-returns.md) of Columbia River Adult Salmon Returns.
+* Daily counts were obtained from the [Fish Passage Center](http://www.fpc.org/)'s [query page](http://www.fpc.org/web/apps/adultsalmon/Q_adultcounts_dataquery.php)
+* Metadata: [Fish Passage Center Adult Metadata](http://www.fpc.org/documents/metadata/FPC_Adult_Metadata.html)
 
 ---
