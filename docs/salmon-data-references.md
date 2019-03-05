@@ -13,6 +13,7 @@
     1. [Pacific Region Commercial Salmon Fishery In-season Catch Estimates](#pacific-region-commercial-salmon-fishery-in-season-catch-estimates)
     1. [North Pacific Salmon Abundance and Biomass Data](#north-pacific-salmon-abundance-and-biomass-data)
     1. [NPAFC Statistics: Pacific Salmonid Catch and Hatchery Release Data](#npafc-statistics-pacific-salmonid-catch-and-hatchery-release-data)
+    1. [Returns and Spawners for Sockeye, Pink, and Chum Salmon from British Columbia](#returns-and-spawners-for-sockeye-pink-and-chum-salmon-from-british-columbia)
 1. [Code possibilities for graph representations](#code-possibilities-for-graph-representations)
 1. [Darwin Core](#darwin-core)
 1. [Other sources of salmon data](#other-sources-of-salmon-data)
@@ -91,12 +92,13 @@ The spatial pattern of fishing (8 areas), by species (6), gear (3), and year (20
         [NPAFC_Hatchery_Rel_Stat_31July2018_Web.xls](https://npafc.org/wp-content/uploads/NPAFC_Hatchery_Rel_Stat_31July2018_Web.xls)
         * Statistics Metadata Report (updated 31 July 2018)  
         [Metadata_31July2018_Web.pdf](https://npafc.org/wp-content/uploads/Metadata_31July2018_Web.pdf)
-* Returns and Spawners for Sockeye, Pink, and Chum Salmon from British Columbia  
+
+### Returns and Spawners for Sockeye, Pink, and Chum Salmon from British Columbia  
 Productivity (recruits per spawner) estimates for BC sockeye, pink, and chum salmon. Annual estimates by brood year of spawner numbers, catch, and population and age composition are in a simple database.
 
-    * A.D. Ogden et al. 2015. Productivity (Recruits-per-Spawner) Data for Sockeye, Pink, and Chum Salmon from British Columbia.  
+* A.D. Ogden et al. 2015. Productivity (Recruits-per-Spawner) Data for Sockeye, Pink, and Chum Salmon from British Columbia.  
     ftp://ftp.meds-sdmm.dfo-mpo.gc.ca/pub/openData/Recruits_Spawner/Canadian_Technical_Report_3130.pdf
-    * Links to data and meta data:  
+* Links to data and meta data:  
     https://open.canada.ca/data/en/dataset/3d659575-4125-44b4-8d8f-c050d6624758
 
 ### Graph DB schemas for the data
