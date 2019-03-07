@@ -15,9 +15,13 @@
     1. [NPAFC Statistics: Pacific Salmonid Catch and Hatchery Release Data](#npafc-statistics-pacific-salmonid-catch-and-hatchery-release-data)
     1. [Returns and Spawners for Sockeye, Pink, and Chum Salmon from British Columbia](#returns-and-spawners-for-sockeye-pink-and-chum-salmon-from-british-columbia)
 1. [Code possibilities for graph representations](#code-possibilities-for-graph-representations)
-1. [Darwin Core](#darwin-core)
 1. [Other sources of salmon data](#other-sources-of-salmon-data)
     1. [Adult Returns for Columbia and Snake River Dams](#adult-returns-for-columbia-and-snake-river-dams)
+    1. [RAM Legacy Stock Assessment Database](#ram-legacy-stock-assessment-database)
+1. [Schema standards](#schema-standards)
+    1. [Darwin Core](#darwin-core)
+    1. [schema.org](#schema-org)
+1. [Other data aggregation projects](#other-data-aggregation-projects)
 
 ---
 
@@ -137,14 +141,6 @@ Referenced at the [Community Site](https://community.neo4j.com/t/international-s
 
 ---
 
-## Darwin Core
-[Darwin Core](http://rs.tdwg.org/dwc/) is a standard that includes a glossary of terms (in other contexts these might be called properties, elements, fields, columns, attributes, or concepts) intended to facilitate the sharing of information about biological diversity by providing identifiers, labels, and definitions.
-
-* [Quick Reference Guide](http://rs.tdwg.org/dwc/terms/)
-* [GitHub repository](https://github.com/tdwg/dwc)
-
----
-
 ## Other sources of salmon data
 
 ### Adult Returns for Columbia and Snake River Dams
@@ -152,5 +148,31 @@ Referenced at the [Community Site](https://community.neo4j.com/t/international-s
 * My [exploratory data analysis](./columbia-river-adult-salmon-returns.md) of Columbia River Adult Salmon Returns.
 * Daily counts were obtained from the [Fish Passage Center](http://www.fpc.org/)'s [query page](http://www.fpc.org/web/apps/adultsalmon/Q_adultcounts_dataquery.php)
 * Metadata: [Fish Passage Center Adult Metadata](http://www.fpc.org/documents/metadata/FPC_Adult_Metadata.html)
+
+### RAM Legacy Stock Assessment Database
+The [RAM Legacy Stock Assessment Database](https://www.ramlegacy.org/) is a compilation of stock assessment results for commercially exploited marine populations from around the world. It is inspired by Dr. Ransom A. Myers' original stock-recruitment database, which is no longer being updated.
+
+---
+
+## Schema standards
+
+### Darwin Core
+[Darwin Core](http://rs.tdwg.org/dwc/) is a standard that includes a glossary of terms (in other contexts these might be called properties, elements, fields, columns, attributes, or concepts) intended to facilitate the sharing of information about biological diversity by providing identifiers, labels, and definitions.
+
+* [Quick Reference Guide](http://rs.tdwg.org/dwc/terms/)
+* [GitHub repository](https://github.com/tdwg/dwc)
+
+---
+
+### schema.org
+[Schema.org](https://schema.org/) is a collaborative, community activity with a mission to create, maintain, and promote schemas for structured data on the Internet, on web pages, in email messages, and beyond.
+
+---
+
+## Other data aggregation projects
+
+* [Ocean Biogeographic Information System](https://obis.org/) (OBIS)
+    * De Pooter, et al. 2017-01-09. Toward a new data standard for combined marine biological and environmental datasets - expanding OBIS beyond species occurrences.  
+    https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5345125/
 
 ---
