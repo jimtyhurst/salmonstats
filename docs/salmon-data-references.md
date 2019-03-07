@@ -171,8 +171,8 @@ The [RAM Legacy Stock Assessment Database](https://www.ramlegacy.org/) is a comp
 
 ## Other data aggregation projects
 
-* [Knowledge Network for Biocomplexity](https://knb.ecoinformatics.org/) (KNB) is an international repository intended to facilitate ecological and environmental research. It provides [software tools](https://knb.ecoinformatics.org/tools) to facilitate effective data management, archiving content, and retrieving data for synthetic analysis projects.
-* [Data Observation Network for Earth](https://www.dataone.org/) (DataONE) is the foundation of new innovative environmental science through a distributed framework and sustainable cyberinfrastructure that meets the needs of science and society for open, persistent, robust, and secure access to well-described and easily discovered Earth observational data.
+* [Knowledge Network for Biocomplexity](https://knb.ecoinformatics.org/) (KNB) is an international repository intended to facilitate ecological and environmental research. It provides [software tools](https://knb.ecoinformatics.org/tools) to facilitate effective data management, archiving content, and retrieving data for synthetic analysis projects. My [search](https://knb.ecoinformatics.org/data) for "salmon" returned 165 datasets, although many of those were about salmon fishing, rather than biological measurements or ecological studies of salmon.
+* [Data Observation Network for Earth](https://www.dataone.org/) (DataONE) is the foundation of new innovative environmental science through a distributed framework and sustainable cyberinfrastructure that meets the needs of science and society for open, persistent, robust, and secure access to well-described and easily discovered Earth observational data. They provide an R package, [dataone](https://cran.r-project.org/package=dataone) to access their datasets and metadata.
 * [Ocean Biogeographic Information System](https://obis.org/) (OBIS)
     * De Pooter, et al. 2017-01-09. Toward a new data standard for combined marine biological and environmental datasets - expanding OBIS beyond species occurrences.  
     https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5345125/
