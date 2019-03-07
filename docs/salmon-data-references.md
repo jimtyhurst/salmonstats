@@ -20,7 +20,7 @@
     1. [RAM Legacy Stock Assessment Database](#ram-legacy-stock-assessment-database)
 1. [Schema standards](#schema-standards)
     1. [Darwin Core](#darwin-core)
-    1. [schema.org](#schema.org)
+    1. [schema.org](#schemaorg)
 1. [Other data aggregation projects](#other-data-aggregation-projects)
 
 ---
