@@ -174,5 +174,6 @@ The [RAM Legacy Stock Assessment Database](https://www.ramlegacy.org/) is a comp
 * [Ocean Biogeographic Information System](https://obis.org/) (OBIS)
     * De Pooter, et al. 2017-01-09. Toward a new data standard for combined marine biological and environmental datasets - expanding OBIS beyond species occurrences.  
     https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5345125/
+* [Data Ecologies Laboratory](https://www.dataecologi.es/)'s [salmon / data / integration](https://www.dataecologi.es/salmon) project investigates the efforts of scientists, state and local actors seeking to draw together heterogenous data to form a synthetic understanding of salmon in the American Pacific Northwest.
 
 ---
