@@ -17,6 +17,8 @@
 1. [Code possibilities for graph representations](#code-possibilities-for-graph-representations)
 1. [Other sources of salmon data](#other-sources-of-salmon-data)
     1. [Adult Returns for Columbia and Snake River Dams](#adult-returns-for-columbia-and-snake-river-dams)
+    1. [Knowledge Network for Biocomplexity](#knowledge-network-for-biocomplexity) (KNB)
+    1. [Data Observation Network for Earth](#dataone) (DataONE)
     1. [RAM Legacy Stock Assessment Database](#ram-legacy-stock-assessment-database)
 1. [Schema standards](#schema-standards)
     1. [Darwin Core](#darwin-core)
@@ -149,6 +151,12 @@ Referenced at the [Community Site](https://community.neo4j.com/t/international-s
 * Daily counts were obtained from the [Fish Passage Center](http://www.fpc.org/)'s [query page](http://www.fpc.org/web/apps/adultsalmon/Q_adultcounts_dataquery.php)
 * Metadata: [Fish Passage Center Adult Metadata](http://www.fpc.org/documents/metadata/FPC_Adult_Metadata.html)
 
+### Knowledge Network for Biocomplexity
+[Knowledge Network for Biocomplexity](https://knb.ecoinformatics.org/) (KNB) is an international repository intended to facilitate ecological and environmental research. It provides [software tools](https://knb.ecoinformatics.org/tools) to facilitate effective data management, archiving content, and retrieving data for synthetic analysis projects. My [search](https://knb.ecoinformatics.org/data) for "salmon" returned 165 datasets, although many of those were about salmon fishing, rather than biological measurements or ecological studies of salmon.
+
+### DataONE
+[Data Observation Network for Earth](https://www.dataone.org/) (DataONE) is the foundation of new innovative environmental science through a distributed framework and sustainable cyberinfrastructure that meets the needs of science and society for open, persistent, robust, and secure access to well-described and easily discovered Earth observational data. They provide an R package, [dataone](https://cran.r-project.org/package=dataone) to access their datasets and metadata.
+
 ### RAM Legacy Stock Assessment Database
 The [RAM Legacy Stock Assessment Database](https://www.ramlegacy.org/) is a compilation of stock assessment results for commercially exploited marine populations from around the world. It is inspired by Dr. Ransom A. Myers' original stock-recruitment database, which is no longer being updated.
 
@@ -174,5 +182,7 @@ The [RAM Legacy Stock Assessment Database](https://www.ramlegacy.org/) is a comp
 * [Ocean Biogeographic Information System](https://obis.org/) (OBIS)
     * De Pooter, et al. 2017-01-09. Toward a new data standard for combined marine biological and environmental datasets - expanding OBIS beyond species occurrences.  
     https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5345125/
+* [Data Ecologies Laboratory](https://www.dataecologi.es/)'s [salmon / data / integration](https://www.dataecologi.es/salmon) project investigates the efforts of scientists, state and local actors seeking to draw together heterogenous data to form a synthetic understanding of salmon in the American Pacific Northwest.
+    * Sarah Inman and David Rimes. 2017. Data Streams, Data Seams: Toward a Seamful Representation of Data Interoperability. Proceedings of [DRS 2018 International Conference](http://www.drs2018limerick.org/conference/drs-2018) 25–28 June 2018, Limerick, Ireland. Volume 1, pp. [35-49](https://www.scribd.com/document/382346645/DRS2018-Vol-1#from_embed).
 
 ---

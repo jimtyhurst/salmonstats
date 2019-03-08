@@ -17,15 +17,17 @@ For example, `BON` is the abbreviation for "Bonneville Dam".}
 the FPC data files.}
 }
 \value{
-tibble with 16 columns of data:
+tibble with 18 columns of data:
    \enumerate{
      \item Dam
      \item Date
      \item ChinookAdult
      \item ChinookJack
+     \item Chinook = ChinookAdult + ChinookJack
      \item CohoAdult
      \item CohoJack
-     \item Steelhead
+     \item Coho = CohoAdult + CohoJack
+     \item Steelhead, total includes UnclippedSteelhead
      \item UnclippedSteelhead
      \item Sockeye
      \item Pink

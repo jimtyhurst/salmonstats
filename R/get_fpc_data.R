@@ -18,15 +18,17 @@ library(tidyverse)
 #'     For example, `BON` is the abbreviation for "Bonneville Dam".
 #' @param data_directory string path to the directory that contains
 #'     the FPC data files.
-#' @return tibble with 16 columns of data:
+#' @return tibble with 18 columns of data:
 #'    \enumerate{
 #'      \item Dam
 #'      \item Date
 #'      \item ChinookAdult
 #'      \item ChinookJack
+#'      \item Chinook = ChinookAdult + ChinookJack
 #'      \item CohoAdult
 #'      \item CohoJack
-#'      \item Steelhead
+#'      \item Coho = CohoAdult + CohoJack
+#'      \item Steelhead, total includes UnclippedSteelhead
 #'      \item UnclippedSteelhead
 #'      \item Sockeye
 #'      \item Pink
@@ -50,6 +52,8 @@ get_fpc_data <- function(year, passage_reporting_site_abbreviation, data_directo
     dplyr::mutate(
       Year = lubridate::year(Date),
       DayOfYear = lubridate::yday(Date),
-      WeekOfYear = lubridate::week(Date)
+      WeekOfYear = lubridate::week(Date),
+      Chinook = ChinookAdult + ChinookJack,
+      Coho = CohoAdult + CohoJack
     )
 }

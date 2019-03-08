@@ -1,6 +1,6 @@
 ---
 title: "Columbia River Adult Salmon Returns: Exploratory Data Analysis"
-author: "[Jim Tyhurst](https://www.jimtyhurst.com/#home)"
+author: "[Jim Tyhurst](https://www.jimtyhurst.com/)"
 date: "`r Sys.Date()`"
 output:
   github_document:
@@ -40,7 +40,7 @@ Daily counts were obtained by manually selecting search parameters from the [Fis
 * _start date_ : I always selected 'January 1' of the selected year.
 * _end date_ : I always selected 'December 31' of the selected year.
 
-After downloading each file of data, the final two lines of each file needed to be deleted, because they were annotations that were _not_ part of the data to be analyzed. Then I changed the name of the files to match this pattern:
+After downloading each file of data, the final two lines of each file needed to be deleted, because they were annotations that were _not_ part of the data to be analyzed. Then I changed the name of the files to match:
 
 > fpc-salmon-{passage_reporting_site_abbreviation}-{year}0101-{year}1231.csv
 
@@ -51,7 +51,7 @@ For example, the following files are for data from Bonneville Dam (BON) from yea
 
 Metadata is available from the [Fish Passage Center Adult Metadata](http://www.fpc.org/documents/metadata/FPC_Adult_Metadata.html) web page. In particular, Bonneville Dam data only has observations from March 15 to November 15 for years up to 2001. Starting in 2002, observations were made every day during the year.
 
-&#x1F53B;&nbsp;_Open Issue_: There are quite a few daily count values that are negative. What does that mean? More fish went downstream through the passage reporting site than upstream? I looked through the [metadata](http://www.fpc.org/documents/metadata/FPC_Adult_Metadata.html), but I did not see an explanation for these negative field values.&nbsp;&#x1F53A;
+&#x1F53B;&nbsp;_Open Issue_: There are quite a few daily count values that are negative. What does that mean? Maybe more fish went downstream through the passage reporting site than upstream? I looked through the [metadata](http://www.fpc.org/documents/metadata/FPC_Adult_Metadata.html), but I did not see an explanation for these negative field values.&nbsp;&#x1F53A;
 
 ```{r message=FALSE}
 # Replace the path components with the location of your data.
@@ -77,7 +77,7 @@ Comparing these last two plots, I am surprised that the numbers for 2015 are so 
 
 ## Plots for Bonneville Dam from 1990 to 2018
 
-Each year of data is in one CSV file in a subdirectory of `inst/extdata` with a separate directory for each passage reporting site. Let's look at data for steelhead salmon first:
+Each year of data is in one CSV file in a subdirectory of `inst/extdata` with a separate directory for each passage reporting site. The data is not too big, so we read all the data into a single data.frame:
 
 ```{r message=FALSE}
 first_year <- 1990
@@ -86,51 +86,95 @@ passage_reporting_site_name <- "Bonneville Dam"
 passage_reporting_site_code <- "BON"
 
 # Concatenates the files into a single tibble.
-steelhead <- first_year:last_year %>% 
+multi_year <- first_year:last_year %>% 
   purrr::map(function(year) {get_fpc_data(year, passage_reporting_site_code, data_directory)}) %>% 
   purrr::reduce(function(x, y) {dplyr::bind_rows(x, y)}) %>% 
-  dplyr::select(Dam, Year, DayOfYear, Steelhead, Date)
-dim(steelhead)
+  dplyr::select(
+    Dam, Year, DayOfYear, 
+    ChinookAdult, ChinookJack, Chinook, 
+    CohoAdult, CohoJack, Coho, 
+    Steelhead, UnclippedSteelhead, 
+    Sockeye, Pink, Chum, 
+    Date
+  )
+dim(multi_year)
 ```
 
-We plot a few years to get a feel for the distribution:
+We plot a few years for Chinook to get a feel for the distribution:
 
 ```{r fig.height = 6, fig.width = 8, fig.align = "center"}
-steelhead %>% 
+multi_year %>% 
   dplyr::filter(Year %in% c(2000, 2005, 2010, 2015)) %>% 
+  mutate(Year = factor(Year)) %>% 
   ggplot(aes(DayOfYear)) +
-  geom_line(aes(y = Steelhead, color = factor(Year))) +
+  geom_line(aes(y = Chinook, color = Year)) +
   ggtitle(
-    glue("{passage_reporting_site}: Daily Count of Adult {species} Returns",
+    glue("{passage_reporting_site}: Daily Count of {species} Returns",
          passage_reporting_site = passage_reporting_site_name,
-         species = "Steelhead")) +
+         species = "Chinook")) +
   scale_x_continuous(name = "Day of Year", breaks = seq(0, 350, by = 50)) +
   scale_y_continuous(name = "Daily Count", limits = c(0, 10000), breaks = seq(0, 10000, by = 2000))
 ```
 
-I am surprised that 2010 and 2015 have higher peaks than 2000 and 2005, because I thought that salmon numbers were descreasing. Let's look more closely at the yearly trend. In the next plot, we sum the daily observations, in order to compare total quantity for the whole year.
+Those 4 years all have very similar distributions for Chinook. Let's look at the same years for Coho:
 
-Since years before 2002 only collected data from March 15 to November 15, we exclude observations from outside those days from 2002 and later, in order to be comparing similar sets of data.
+```{r fig.height = 6, fig.width = 8, fig.align = "center"}
+multi_year %>% 
+  dplyr::filter(Year %in% c(2000, 2005, 2010, 2015)) %>% 
+  mutate(Year = factor(Year)) %>% 
+  ggplot(aes(DayOfYear)) +
+  geom_line(aes(y = Coho, color = Year)) +
+  ggtitle(
+    glue("{passage_reporting_site}: Daily Count of {species} Returns",
+         passage_reporting_site = passage_reporting_site_name,
+         species = "Coho")) +
+  scale_x_continuous(name = "Day of Year", breaks = seq(0, 350, by = 50)) +
+  scale_y_continuous(name = "Daily Count", limits = c(0, 10000), breaks = seq(0, 10000, by = 2000))
+```
+
+This plot shows much more variation across years for Coho, as compared to the previous plot for Chinook.
+
+Let's look more closely at the yearly trend. In the next plot, we sum the daily observations, in order to compare total quantity for the whole year.
+
+Since years before 2002 only collected data from March 15 to November 15, we exclude observations from outside those days from 2002 and later, in order to be comparing similar sets of data across all years.
 
 &#x1F53B;&nbsp;_To Do_: Fix the following calculation to work for leap years.&nbsp;&#x1F53A;
 
 ```{r fig.height = 6, fig.width = 8, fig.align = "center"}
 first_observation_day <- 74  # March 15, except for leap year
 last_observation_day <- 319  # Nov 15, except for leap year
-steelhead  %>% 
+multi_year  %>% 
   dplyr::filter(lubridate::yday(Date) >= first_observation_day,
                 lubridate::yday(Date) <= last_observation_day) %>% 
   dplyr::group_by(Year) %>% 
-  dplyr::mutate(Quantity = sum(Steelhead)) %>%
-  ggplot(aes(Year, Quantity)) +
-  geom_bar(stat = "identity") +
+  dplyr::mutate(
+    ChinookCount = sum(Chinook),
+    CohoCount = sum(Coho)
+  ) %>%
+  dplyr::select(Year, Chinook = ChinookCount, Coho = CohoCount) %>% 
+  tidyr::gather(`Chinook`, `Coho`, key = "species", value = "Returns") %>% 
+  unique() %>% 
+  mutate(Species = factor(species)) %>% 
+  ggplot(aes(Year, Returns, fill = Species)) +
+  geom_bar(stat = "identity", position = "dodge") +
+  scale_fill_discrete(
+    name = "Species",
+    breaks=c("Chinook", "Coho"),
+    labels=c("Chinook", "Coho")
+  ) +
   ggtitle(
-    glue("{passage_reporting_site}: Total Adult {species} Returns",
-         passage_reporting_site = passage_reporting_site_name,
-         species = "Steelhead")) +
+    glue("{passage_reporting_site}: Total Returns",
+         passage_reporting_site = passage_reporting_site_name)
+  ) +
   scale_x_continuous(name = "Year", breaks = seq(1990, 2015, by = 5)) +
   scale_y_continuous(name = "Returns Counted", labels = function(x){format(x, scientific = FALSE, big.mark = ",")})
 ```
+
+We see that the total returns for the two species are _not_ strongly correlated.
+
+&#x1F53B;&nbsp;_To Do_: Need to calculate quantitative measure of (lack of) correlation between the total returns for the two species.&nbsp;&#x1F53A;
+
+&#x1F53B;&nbsp;_To Do_: Add other species to the plot. Change to a line plot?&nbsp;&#x1F53A;
 
 &#x1F53B;&nbsp;_To Do_: Extend this plot to earlier years.&nbsp;&#x1F53A;
 
