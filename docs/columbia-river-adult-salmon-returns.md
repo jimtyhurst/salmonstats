@@ -1,7 +1,7 @@
 Columbia River Adult Salmon Returns: Exploratory Data Analysis
 ================
 [Jim Tyhurst](https://www.jimtyhurst.com/)
-2019-03-07
+2019-03-08
 
   - [Configuration](#configuration)
   - [Data preparation](#data-preparation)
@@ -172,9 +172,12 @@ Let’s look more closely at the yearly trend. In the next plot, we sum
 the daily observations, in order to compare total quantity for the whole
 year.
 
-Since years before 2002 only collected data from March 15 to November
-15, we exclude observations from outside those days from 2002 and later,
-in order to be comparing similar sets of data across all years.
+In the years before 2002, data was only collected from March 15 to
+November 15. Therefore, we exclude observations from outside those days
+from 2002 and later, in order to be comparing similar date ranges for
+data across all years. This leads to some underreporting of numbers for
+2002 and later if just considering the total, but it makes for a more
+consistent comparison with earlier years of observation.
 
 🔻 *To Do*: Fix the following calculation to work for leap years. 🔺
 
@@ -214,9 +217,11 @@ We see that the total returns for the two species are *not* strongly
 correlated.
 
 🔻 *To Do*: Need to calculate quantitative measure of (lack of)
-correlation between the total returns for the two species. 🔺
+correlation between the total returns for the two species. Use
+`cor.test` to calculate correlation coefficient and `p-value`. 🔺
 
-🔻 *To Do*: Add other species to the plot. Change to a line plot? 🔺
+🔻 *To Do*: Add other species to the plot. Change to a line plot, so that
+it is easier to see the trends? 🔺
 
 🔻 *To Do*: Extend this plot to earlier years. 🔺
 
