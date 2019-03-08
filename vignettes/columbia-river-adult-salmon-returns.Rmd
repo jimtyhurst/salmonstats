@@ -136,7 +136,7 @@ This plot shows much more variation across years for Coho, as compared to the pr
 
 Let's look more closely at the yearly trend. In the next plot, we sum the daily observations, in order to compare total quantity for the whole year.
 
-Since years before 2002 only collected data from March 15 to November 15, we exclude observations from outside those days from 2002 and later, in order to be comparing similar sets of data across all years.
+In the years before 2002, data was only collected from March 15 to November 15. Therefore, we exclude observations from outside those days from 2002 and later, in order to be comparing similar date ranges for data across all years. This leads to some underreporting of numbers for 2002 and later if just considering the total, but it makes for a more consistent comparison with earlier years of observation.
 
 &#x1F53B;&nbsp;_To Do_: Fix the following calculation to work for leap years.&nbsp;&#x1F53A;
 
@@ -172,9 +172,9 @@ multi_year  %>%
 
 We see that the total returns for the two species are _not_ strongly correlated.
 
-&#x1F53B;&nbsp;_To Do_: Need to calculate quantitative measure of (lack of) correlation between the total returns for the two species.&nbsp;&#x1F53A;
+&#x1F53B;&nbsp;_To Do_: Need to calculate quantitative measure of (lack of) correlation between the total returns for the two species. Use `cor.test` to calculate correlation coefficient and `p-value`.&nbsp;&#x1F53A;
 
-&#x1F53B;&nbsp;_To Do_: Add other species to the plot. Change to a line plot?&nbsp;&#x1F53A;
+&#x1F53B;&nbsp;_To Do_: Add other species to the plot. Change to a line plot, so that it is easier to see the trends?&nbsp;&#x1F53A;
 
 &#x1F53B;&nbsp;_To Do_: Extend this plot to earlier years.&nbsp;&#x1F53A;
 
