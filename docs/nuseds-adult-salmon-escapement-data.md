@@ -1,7 +1,13 @@
 NuSEDS Adult Salmon Escapement Data: Exploratory Data Analysis
 ================
 [Jim Tyhurst](https://www.jimtyhurst.com/)
-2019-02-26
+2019-03-07
+
+  - [Configuration](#configuration)
+  - [New Salmon Escapement Database System
+    (NuSEDS)](#new-salmon-escapement-database-system-nuseds)
+  - [MAX\_ESTIMATE](#max_estimate)
+  - [References](#references)
 
 🔻 *Work in Process* … 🔺
 
