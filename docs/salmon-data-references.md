@@ -31,7 +31,7 @@
 
 ### [Events](https://yearofthesalmon.org/events/)
 
-* The Second NPAFC-IYS Workshop: [Salmon Ocean Ecology in a Changing Climate](https://yearofthesalmon.org/salmon_event/the-second-npafc-iys-workshop-salmon-ocean-ecology-in-a-changing-climate/). 18-20 May 2019, Portland, Oregon, USA.
+* The Second NPAFC-IYS Workshop: [Salmon Ocean Ecology in a Changing Climate](https://npafc.org/workshop-2019/). 18-20 May 2019, Portland, Oregon, USA.
 
 ---
 
