@@ -179,10 +179,11 @@ The [RAM Legacy Stock Assessment Database](https://www.ramlegacy.org/) is a comp
 
 ## Other data aggregation projects
 
+* [State of Alaska's Salmon and People](https://alaskasalmonandpeople.org/) (SASAP) project is a collaboration of researchers, cultural leaders, and others working to bring together integrated, accurate, and up-to-date information that will help to support better salmon decision-making.
+* [Data Ecologies Laboratory](https://www.dataecologi.es/)'s [salmon / data / integration](https://www.dataecologi.es/salmon) project investigates the efforts of scientists, state and local actors seeking to draw together heterogenous data to form a synthetic understanding of salmon in the American Pacific Northwest.
+    * Sarah Inman and David Rimes. 2017. Data Streams, Data Seams: Toward a Seamful Representation of Data Interoperability. Proceedings of [DRS 2018 International Conference](http://www.drs2018limerick.org/conference/drs-2018) 25–28 June 2018, Limerick, Ireland. Volume 1, pp. [35-49](https://www.scribd.com/document/382346645/DRS2018-Vol-1#from_embed).
 * [Ocean Biogeographic Information System](https://obis.org/) (OBIS)
     * De Pooter, et al. 2017-01-09. Toward a new data standard for combined marine biological and environmental datasets - expanding OBIS beyond species occurrences.  
     https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5345125/
-* [Data Ecologies Laboratory](https://www.dataecologi.es/)'s [salmon / data / integration](https://www.dataecologi.es/salmon) project investigates the efforts of scientists, state and local actors seeking to draw together heterogenous data to form a synthetic understanding of salmon in the American Pacific Northwest.
-    * Sarah Inman and David Rimes. 2017. Data Streams, Data Seams: Toward a Seamful Representation of Data Interoperability. Proceedings of [DRS 2018 International Conference](http://www.drs2018limerick.org/conference/drs-2018) 25–28 June 2018, Limerick, Ireland. Volume 1, pp. [35-49](https://www.scribd.com/document/382346645/DRS2018-Vol-1#from_embed).
 
 ---
