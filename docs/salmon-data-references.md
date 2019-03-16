@@ -7,7 +7,7 @@
 
 1. [International Year of the Salmon](#international-year-of-the-salmon)
     1. [Events](#events)
-1. [International Salmon Data Laboratory](#international-salmon-data-laboratory)
+1. [International Salmon Data Laboratory](#international-salmon-data-laboratory-isdl)
 1. [ISDL Sources of salmon data](#isdl-sources-of-salmon-data)
     1. [New Salmon Escapement Database System (NuSEDS)](#new-salmon-escapement-database-system-nuseds)
     1. [Pacific Region Commercial Salmon Fishery In-season Catch Estimates](#pacific-region-commercial-salmon-fishery-in-season-catch-estimates)
@@ -35,8 +35,9 @@
 
 ---
 
-## [International Salmon Data Laboratory](https://yearofthesalmon.org/project/international-salmon-data-laboratory/) (ISDL)
+## International Salmon Data Laboratory (ISDL)
 
+* [ISDL](https://yearofthesalmon.org/project/international-salmon-data-laboratory/) within the [IYS](https://yearofthesalmon.org/).
 * [GitHub repository](https://github.com/int-salmon-data-lab/)
 * [A Prolegomena for ISDL](https://docs.google.com/document/d/1aZNCDmqZwhVQWHo_XsXs2f_VI0Wx_Ae4l2GRaYcoYw4/): An introduction to ISDL as a [project](https://yearofthesalmon.org/project/international-salmon-data-laboratory/) within the [International Year of the Salmon](https://yearofthesalmon.org/).
 * Webcasts
