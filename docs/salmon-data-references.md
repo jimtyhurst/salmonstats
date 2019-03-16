@@ -37,7 +37,7 @@
 
 ## International Salmon Data Laboratory (ISDL)
 
-* [ISDL](https://yearofthesalmon.org/project/international-salmon-data-laboratory/) within the [IYS](https://yearofthesalmon.org/).
+* [ISDL home page](https://yearofthesalmon.org/project/international-salmon-data-laboratory/) within the [IYS](https://yearofthesalmon.org/).
 * [GitHub repository](https://github.com/int-salmon-data-lab/)
 * [A Prolegomena for ISDL](https://docs.google.com/document/d/1aZNCDmqZwhVQWHo_XsXs2f_VI0Wx_Ae4l2GRaYcoYw4/): An introduction to ISDL as a [project](https://yearofthesalmon.org/project/international-salmon-data-laboratory/) within the [International Year of the Salmon](https://yearofthesalmon.org/).
 * Webcasts
